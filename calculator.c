@@ -3,14 +3,14 @@
 int main()
 {
     int choice,num1,num2,num;
-    printf("Welcome!\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Square\n6.Cube\n7.Root\nEnter your choice : ");
+    printf("Welcome to my mini project!!\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Square\n6.Cube\n7.Root\nEnter your choice : ");
     scanf("%d",&choice);
-    if(choice <=4 || choice==7);
+    if(choice <=4)
     {
         printf("\nEnter 2 Numbers:\n");
         scanf("%d%d",&num1,&num2);
     }
-    if(choice >4 && choice <=7)
+    else if(choice <=7)
     {
          printf("\nEnter 1 Number:\n");
          scanf("%d",&num);
@@ -48,8 +48,9 @@ int main()
             break;
         }
         case 7:
-        {
-            printf("\nRoot is %d",sqrt(num));
+        {   
+            float srt = sqrt(num);
+            printf("\nRoot is %.2f",srt);
             break;
         }
         default:
